@@ -1,0 +1,5 @@
+doc/README_sc.html
+syntax/cpp.vim
+syntax/log.vim
+etc/colors.vim
+etc/systemc.dict
