@@ -47,7 +47,7 @@ vimball: $(SC_BALL)
 # The rules
 
 help:
-	perl -ne 'if(m/^define..DOCUMENTATION./..m/endef/){print;}' ${MAKEFILE_RULES}
+	@perl -ne 'if(m{^define..DOCUMENTATION.}..m{endef}){print if !m{DOCUMENTATION} and !m/endef/;}' ${MAKEFILE_RULES}
 
 ORIG:=$(wildcard \
 	 $(addprefix ${HOME}/.vim/,$(strip\
